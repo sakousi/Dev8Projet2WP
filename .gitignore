@@ -1,0 +1,21 @@
+# Ignore Node Modules
+node_modules
+package-lock.json
+
+# Ignore VS Code
+.vscode
+
+# Ignore .env
+.env
+
+# Ignore .next
+.next
+
+# Ignore PhpStorm
+.idea
+
+# Ignore .DS_Store
+.DS_Store
+
+# Ignore genereted files
+style.css
