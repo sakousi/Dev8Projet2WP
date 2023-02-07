@@ -1,8 +1,23 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: null,
   content: ["./**/*.php"],
   theme: {
+    fontFamily: {
+        'khula': ['Khula', 'sans-serif'],
+    },
+    colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        gray: colors.gray,
+        blue: '#003878',
+        creamy: '#F5F9FF',
+        orange: '#F15842',
+        white: '#FFFFFF',
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

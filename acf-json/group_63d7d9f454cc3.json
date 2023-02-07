@@ -65,7 +65,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "contact.php"
             }
         ]
     ],
@@ -92,5 +92,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675352389
+    "modified": 1675354219
 }

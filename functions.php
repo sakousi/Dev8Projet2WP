@@ -18,6 +18,11 @@
 	
 	add_filter('body_class', 'my_plugin_body_class');
 
+// Ajouter des font personnalisées
+	function theme_add_google_fonts() {
+		wp_enqueue_style( 'theme-google-fonts', 'https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap', false );
+	}
+	add_action( 'wp_enqueue_scripts', 'theme_add_google_fonts' );
 
 // Ajouter un emplacement de menu
 	function theme_register_nav_menu(){
