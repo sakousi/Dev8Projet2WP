@@ -6,18 +6,6 @@ module.exports = {
   darkMode: null,
   content: ["./**/*.php"],
   theme: {
-    fontFamily: {
-        'khula': ['Khula', 'sans-serif'],
-    },
-    colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        gray: colors.gray,
-        blue: '#003878',
-        creamy: '#F5F9FF',
-        orange: '#F15842',
-        white: '#FFFFFF',
-    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -34,7 +22,18 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+        fontFamily: {
+            'khula': ['Khula', 'sans-serif'],
+        },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            blue: '#003878',
+            creamy: '#F5F9FF',
+            orange: '#F15842',
+        }
+    },
   },
   plugins: [],
 }

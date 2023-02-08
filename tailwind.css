@@ -17,3 +17,11 @@ Version: 1.0
 .btn {
     @apply border border-gray-400 rounded-full py-2 px-4;
 }
+
+.form-btn{
+    @apply py-4 px-16 rounded-full bg-orange text-white;
+}
+
+.form{
+    @apply w-full flex justify-center;
+}
