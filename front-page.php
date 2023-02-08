@@ -3,7 +3,7 @@
     <div class="w-full h-full bg-right bg-contain bg-no-repeat" style="background-image: url('<?php the_field('bg-header'); ?>')">
         <div class="h-full w-full container flex items-center">
             <div class="w-1/2">
-                <h1 class="text-5xl font-exrabold font-khula text-white"><?php the_field('title'); ?></h1>
+                <h1 class="text-5xl font-extrabold font-khula text-white"><?php the_field('title'); ?></h1>
                 <p class="text-2xl text-white"><?= get_field('sub-title'); ?></p>
             </div>
         </div>

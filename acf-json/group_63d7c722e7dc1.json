@@ -81,7 +81,7 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": 2,
-                    "new_lines": ""
+                    "new_lines": "wpautop"
                 }
             ]
         },
@@ -237,5 +237,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675785763
+    "modified": 1675793988
 }
