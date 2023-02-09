@@ -25,3 +25,25 @@ Version: 1.0
 .form{
     @apply w-full flex justify-center;
 }
+
+.hamburger{
+    @apply w-8 h-8 flex flex-col justify-between;
+}
+
+.hamburger--collapse{
+    @apply hidden;
+}
+
+.hamburger-box{
+    @apply w-full h-1 bg-black;
+}
+
+.hamburger-inner{
+    @apply w-full h-1 bg-black;
+}
+
+@media (max-width: 768px) {
+    .responsive-bg{
+        @apply !bg-none;
+    }
+}

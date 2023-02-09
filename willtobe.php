@@ -72,7 +72,7 @@
                             <div class="h-74 w-full">
                                 <img class="object-contain h-full w-full" src="<?php the_sub_field('image'); ?>" alt="">
                             </div>
-                            <p class="font-bold text-lg text-center capitalize"><?php the_sub_field('name'); ?></p>
+                            <p class="font-bold text-lg text-center capitalize"><?php the_sub_field('name'); ?>.</p>
                         </div>
                     <?php endwhile; ?>
                 </div>
