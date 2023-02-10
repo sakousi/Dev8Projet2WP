@@ -7,7 +7,20 @@
 		$previousPage = get_previous_posts_page_link();
 		$nextPage = get_next_posts_page_link();
 	?>
-		<div class="grid grid-cols-2 gap-8 py-8">
+        <div class="w-full flex justify-center">
+            <a href="<?= $previousPage ?>"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="px-4">
+				<?php the_posts_pagination(
+					array(
+						'screen_reader_text' => '',
+						'mid_size' => 2,
+						'prev_next' => false,
+					)
+				); ?>
+            </div>
+            <a href="<?= $nextPage ?>"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+		<div class="grid md:grid-cols-2 grid-cols-1 gap-8 py-8">
 			<?php while(have_posts()) : the_post()?>
 				<div class="bg-white shadow-md rounded grid grid-rows-2 h-[30rem] overflow-hidden">
 					<div class="w-full h-full overflow-hidden">
@@ -22,9 +35,18 @@
 			<?php endwhile; ?>
 		</div>
 		<?php wp_reset_postdata(); ?>
-		<div>
-			<a href="<?= $previousPage ?>">page precedent</a>
-			<a href="<?= $nextPage ?>">page suivante</a>
+		<div class="w-full flex justify-center">
+			<a href="<?= $previousPage ?>"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="px-4">
+                <?php the_posts_pagination(
+                    array(
+                        'screen_reader_text' => '',
+                        'mid_size' => 2,
+                        'prev_next' => false,
+                    )
+                ); ?>
+            </div>
+			<a href="<?= $nextPage ?>"><i class="fa-solid fa-arrow-right"></i></a>
 		</div>
 	<?php endif; ?>
 </main>

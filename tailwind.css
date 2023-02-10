@@ -47,3 +47,7 @@ Version: 1.0
         @apply !bg-none;
     }
 }
+
+.screen-reader-text {
+    @apply hidden;
+}
